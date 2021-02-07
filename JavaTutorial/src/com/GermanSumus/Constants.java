@@ -1,6 +1,6 @@
 package com.GermanSumus;
 
-public class Constance {
+public class Constants {
     public static void main(String[] args) {
         // The key word final prevents the variable to change later on
         final float pi = 3.14F;
@@ -9,7 +9,5 @@ public class Constance {
         System.out.println(pi);
         System.out.println(birthYear);
         System.out.println(maxNumberOfLoans);
-
-
     }
 }
