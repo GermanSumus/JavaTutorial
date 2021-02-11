@@ -20,5 +20,10 @@ public class ControlFlow {
             System.out.println("Person has high income.");
         else
             System.out.println("Person does not have high income");
+
+        // Ternary operator
+        // (Conditional) ? If True : If False;
+        String classType = (income > 100_000) ? "First Class" : "Economy";
+        System.out.println(classType);
     }
 }
