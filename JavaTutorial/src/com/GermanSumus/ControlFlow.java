@@ -25,5 +25,19 @@ public class ControlFlow {
         // (Conditional) ? If True : If False;
         String classType = (income > 100_000) ? "First Class" : "Economy";
         System.out.println(classType);
+
+        // Switch statement
+        String role = "admin";
+        switch (role) {
+            case "admin":
+                System.out.println("Welcome admin");
+                break;
+            case "moderator":
+                System.out.println("Welcome moderator");
+                break;
+            default:
+                System.out.println("Welcome guest");
+        }
+
     }
 }
