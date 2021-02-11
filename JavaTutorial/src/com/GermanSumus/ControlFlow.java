@@ -1,5 +1,7 @@
 package com.GermanSumus;
 
+import java.util.Scanner;
+
 public class ControlFlow {
     public static void main(String[] args) {
         int temp = 75;
@@ -38,6 +40,23 @@ public class ControlFlow {
             default:
                 System.out.println("Welcome guest");
         }
+        // Exercise: Print out 'Fizz' is number is divisible by 5, 'Buzz' if divisible by 3,
+        // 'FizzBuzz' if divisible by both 5 and 3, same number if not divisible by either.
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter in number: ");
+        int userInput = Integer.parseInt(scanner.nextLine());
 
+        boolean divisibleByFive = (0 == userInput%5);
+        boolean divisibleByThree = (0 == userInput%3);
+        boolean divisibleByBoth = (divisibleByFive && divisibleByThree);
+
+        if (divisibleByBoth)
+            System.out.println("FizzBuzz");
+        else if (divisibleByFive)
+            System.out.println("Fizz");
+        else if (divisibleByThree)
+            System.out.println("Buzz");
+        else
+            System.out.println(userInput);
     }
 }
